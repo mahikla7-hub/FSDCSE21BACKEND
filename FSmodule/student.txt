@@ -1,0 +1,11 @@
+const fs = require("fs");
+//CREATE-create a file
+fs.writeFile("student.txt","Name : Rahul\nRollNo:101");
+console.log("File created successfully");
+//READ-Read the File
+lae data = fs.readFile("student.txt","utf8");
+console.log(\nFile Content:");
+console.log(data);
+//UPDATE -Add a new data to the file
+fs.appendFile("student.txt","\nCourse: B.Tech CSE");
+console.log("\nFile updated successfully");
